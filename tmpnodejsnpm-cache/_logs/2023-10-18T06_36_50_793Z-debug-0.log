@@ -1,0 +1,316 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.2.0
+2 info using node@v21.0.0
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:C:\Users\Administrator\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\Administrator\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 11ms
+17 timing npm:load:configload Completed in 11ms
+18 timing config:load:flatten Completed in 3ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm i axios
+22 verbose argv "i" "axios"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\tmpnodejsnpm-cache\_logs\2023-10-18T06_36_50_793Z-
+26 verbose logfile C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\tmpnodejsnpm-cache\_logs\2023-10-18T06_36_50_793Z-debug-0.log
+27 timing npm:load:logFile Completed in 10ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 45ms
+31 timing arborist:ctor Completed in 0ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 44ms
+34 timing idealTree:userRequests Completed in 1ms
+35 silly idealTree buildDeps
+36 silly fetch manifest axios@*
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/axios 298ms (cache miss)
+39 silly placeDep ROOT axios@1.5.1 OK for: movie-nextjs@0.1.0 want: *
+40 silly fetch manifest follow-redirects@^1.15.0
+41 silly fetch manifest form-data@^4.0.0
+42 silly fetch manifest proxy-from-env@^1.1.0
+43 http fetch GET 200 https://registry.npmjs.org/follow-redirects 83ms (cache miss)
+44 http fetch GET 200 https://registry.npmjs.org/proxy-from-env 183ms (cache miss)
+45 http fetch GET 200 https://registry.npmjs.org/form-data 196ms (cache miss)
+46 timing idealTree:#root Completed in 505ms
+47 silly placeDep ROOT follow-redirects@1.15.3 OK for: axios@1.5.1 want: ^1.15.0
+48 silly placeDep ROOT form-data@4.0.0 OK for: axios@1.5.1 want: ^4.0.0
+49 silly fetch manifest asynckit@^0.4.0
+50 silly fetch manifest combined-stream@^1.0.8
+51 silly fetch manifest mime-types@^2.1.12
+52 silly placeDep ROOT proxy-from-env@1.1.0 OK for: axios@1.5.1 want: ^1.1.0
+53 http fetch GET 200 https://registry.npmjs.org/asynckit 63ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/combined-stream 63ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/mime-types 74ms (cache miss)
+56 timing idealTree:node_modules/axios Completed in 80ms
+57 timing idealTree:node_modules/follow-redirects Completed in 0ms
+58 silly placeDep ROOT asynckit@0.4.0 OK for: form-data@4.0.0 want: ^0.4.0
+59 silly placeDep ROOT combined-stream@1.0.8 OK for: form-data@4.0.0 want: ^1.0.8
+60 silly fetch manifest delayed-stream@~1.0.0
+61 silly placeDep ROOT mime-types@2.1.35 OK for: form-data@4.0.0 want: ^2.1.12
+62 silly fetch manifest mime-db@1.52.0
+63 http fetch GET 200 https://registry.npmjs.org/delayed-stream 64ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/mime-db 82ms (cache miss)
+65 timing idealTree:node_modules/form-data Completed in 87ms
+66 timing idealTree:node_modules/asynckit Completed in 0ms
+67 silly placeDep ROOT delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+68 timing idealTree:node_modules/combined-stream Completed in 1ms
+69 timing idealTree:node_modules/delayed-stream Completed in 0ms
+70 silly placeDep ROOT mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+71 timing idealTree:node_modules/mime-types Completed in 1ms
+72 timing idealTree:node_modules/mime-db Completed in 0ms
+73 timing idealTree:node_modules/proxy-from-env Completed in 0ms
+74 timing idealTree:buildDeps Completed in 676ms
+75 timing idealTree:fixDepFlags Completed in 1ms
+76 timing idealTree Completed in 724ms
+77 timing reify:loadTrees Completed in 725ms
+78 timing reify:diffTrees Completed in 4ms
+79 silly reify moves {}
+80 timing reify:retireShallow Completed in 1ms
+81 timing reify:createSparse Completed in 3ms
+82 timing reify:loadBundles Completed in 0ms
+83 silly audit bulk request {
+83 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+83 silly audit   '@jridgewell/gen-mapping': [ '0.3.3' ],
+83 silly audit   '@jridgewell/resolve-uri': [ '3.1.1' ],
+83 silly audit   '@jridgewell/set-array': [ '1.1.2' ],
+83 silly audit   '@jridgewell/sourcemap-codec': [ '1.4.15' ],
+83 silly audit   '@jridgewell/trace-mapping': [ '0.3.20' ],
+83 silly audit   '@next/env': [ '13.5.5' ],
+83 silly audit   '@next/swc-darwin-arm64': [ '13.5.5' ],
+83 silly audit   '@next/swc-darwin-x64': [ '13.5.5' ],
+83 silly audit   '@next/swc-linux-arm64-gnu': [ '13.5.5' ],
+83 silly audit   '@next/swc-linux-arm64-musl': [ '13.5.5' ],
+83 silly audit   '@next/swc-linux-x64-gnu': [ '13.5.5' ],
+83 silly audit   '@next/swc-linux-x64-musl': [ '13.5.5' ],
+83 silly audit   '@next/swc-win32-arm64-msvc': [ '13.5.5' ],
+83 silly audit   '@next/swc-win32-ia32-msvc': [ '13.5.5' ],
+83 silly audit   '@next/swc-win32-x64-msvc': [ '13.5.5' ],
+83 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+83 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+83 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+83 silly audit   '@swc/helpers': [ '0.5.2' ],
+83 silly audit   'any-promise': [ '1.3.0' ],
+83 silly audit   anymatch: [ '3.1.3' ],
+83 silly audit   arg: [ '5.0.2' ],
+83 silly audit   autoprefixer: [ '10.4.16' ],
+83 silly audit   'balanced-match': [ '1.0.2' ],
+83 silly audit   'binary-extensions': [ '2.2.0' ],
+83 silly audit   'brace-expansion': [ '1.1.11' ],
+83 silly audit   braces: [ '3.0.2' ],
+83 silly audit   browserslist: [ '4.22.1' ],
+83 silly audit   busboy: [ '1.6.0' ],
+83 silly audit   'camelcase-css': [ '2.0.1' ],
+83 silly audit   'caniuse-lite': [ '1.0.30001550' ],
+83 silly audit   chokidar: [ '3.5.3' ],
+83 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+83 silly audit   'client-only': [ '0.0.1' ],
+83 silly audit   commander: [ '4.1.1' ],
+83 silly audit   'concat-map': [ '0.0.1' ],
+83 silly audit   cssesc: [ '3.0.0' ],
+83 silly audit   didyoumean: [ '1.2.2' ],
+83 silly audit   dlv: [ '1.1.3' ],
+83 silly audit   'electron-to-chromium': [ '1.4.557' ],
+83 silly audit   escalade: [ '3.1.1' ],
+83 silly audit   'fast-glob': [ '3.3.1' ],
+83 silly audit   fastq: [ '1.15.0' ],
+83 silly audit   'fill-range': [ '7.0.1' ],
+83 silly audit   'fraction.js': [ '4.3.7' ],
+83 silly audit   'fs.realpath': [ '1.0.0' ],
+83 silly audit   fsevents: [ '2.3.3' ],
+83 silly audit   glob: [ '7.1.6' ],
+83 silly audit   'glob-to-regexp': [ '0.4.1' ],
+83 silly audit   'graceful-fs': [ '4.2.11' ],
+83 silly audit   has: [ '1.0.4' ],
+83 silly audit   inflight: [ '1.0.6' ],
+83 silly audit   inherits: [ '2.0.4' ],
+83 silly audit   'is-binary-path': [ '2.1.0' ],
+83 silly audit   'is-core-module': [ '2.13.0' ],
+83 silly audit   'is-extglob': [ '2.1.1' ],
+83 silly audit   'is-glob': [ '4.0.3' ],
+83 silly audit   'is-number': [ '7.0.0' ],
+83 silly audit   jiti: [ '1.20.0' ],
+83 silly audit   'js-tokens': [ '4.0.0' ],
+83 silly audit   lilconfig: [ '2.1.0' ],
+83 silly audit   'lines-and-columns': [ '1.2.4' ],
+83 silly audit   'loose-envify': [ '1.4.0' ],
+83 silly audit   merge2: [ '1.4.1' ],
+83 silly audit   micromatch: [ '4.0.5' ],
+83 silly audit   minimatch: [ '3.1.2' ],
+83 silly audit   mz: [ '2.7.0' ],
+83 silly audit   nanoid: [ '3.3.6' ],
+83 silly audit   next: [ '13.5.5' ],
+83 silly audit   'node-releases': [ '2.0.13' ],
+83 silly audit   'normalize-path': [ '3.0.0' ],
+83 silly audit   'normalize-range': [ '0.1.2' ],
+83 silly audit   'object-assign': [ '4.1.1' ],
+83 silly audit   'object-hash': [ '3.0.0' ],
+83 silly audit   once: [ '1.4.0' ],
+83 silly audit   'path-is-absolute': [ '1.0.1' ],
+83 silly audit   'path-parse': [ '1.0.7' ],
+83 silly audit   picocolors: [ '1.0.0' ],
+83 silly audit   picomatch: [ '2.3.1' ],
+83 silly audit   pify: [ '2.3.0' ],
+83 silly audit   pirates: [ '4.0.6' ],
+83 silly audit   postcss: [ '8.4.31' ],
+83 silly audit   'postcss-import': [ '15.1.0' ],
+83 silly audit   'postcss-js': [ '4.0.1' ],
+83 silly audit   'postcss-load-config': [ '4.0.1' ],
+83 silly audit   'postcss-nested': [ '6.0.1' ],
+83 silly audit   'postcss-selector-parser': [ '6.0.13' ],
+83 silly audit   'postcss-value-parser': [ '4.2.0' ],
+83 silly audit   'queue-microtask': [ '1.2.3' ],
+83 silly audit   react: [ '18.2.0' ],
+83 silly audit   'react-dom': [ '18.2.0' ],
+83 silly audit   'read-cache': [ '1.0.0' ],
+83 silly audit   readdirp: [ '3.6.0' ],
+83 silly audit   resolve: [ '1.22.8' ],
+83 silly audit   reusify: [ '1.0.4' ],
+83 silly audit   'run-parallel': [ '1.2.0' ],
+83 silly audit   scheduler: [ '0.23.0' ],
+83 silly audit   'source-map-js': [ '1.0.2' ],
+83 silly audit   streamsearch: [ '1.1.0' ],
+83 silly audit   'styled-jsx': [ '5.1.1' ],
+83 silly audit   sucrase: [ '3.34.0' ],
+83 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+83 silly audit   tailwindcss: [ '3.3.3' ],
+83 silly audit   thenify: [ '3.3.1' ],
+83 silly audit   'thenify-all': [ '1.6.0' ],
+83 silly audit   'to-regex-range': [ '5.0.1' ],
+83 silly audit   'ts-interface-checker': [ '0.1.13' ],
+83 silly audit   tslib: [ '2.6.2' ],
+83 silly audit   'update-browserslist-db': [ '1.0.13' ],
+83 silly audit   'util-deprecate': [ '1.0.2' ],
+83 silly audit   watchpack: [ '2.4.0' ],
+83 silly audit   wrappy: [ '1.0.2' ],
+83 silly audit   yaml: [ '2.3.3' ],
+83 silly audit   axios: [ '1.5.1' ],
+83 silly audit   'follow-redirects': [ '1.15.3' ],
+83 silly audit   'form-data': [ '4.0.0' ],
+83 silly audit   'proxy-from-env': [ '1.1.0' ],
+83 silly audit   asynckit: [ '0.4.0' ],
+83 silly audit   'combined-stream': [ '1.0.8' ],
+83 silly audit   'mime-types': [ '2.1.35' ],
+83 silly audit   'delayed-stream': [ '1.0.0' ],
+83 silly audit   'mime-db': [ '1.52.0' ]
+83 silly audit }
+84 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\fsevents
+85 silly reify mark deleted [
+85 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\fsevents'
+85 silly reify ]
+86 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-win32-ia32-msvc
+87 silly reify mark deleted [
+87 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-win32-ia32-msvc'
+87 silly reify ]
+88 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-win32-arm64-msvc
+89 silly reify mark deleted [
+89 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-win32-arm64-msvc'
+89 silly reify ]
+90 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-linux-x64-musl
+91 silly reify mark deleted [
+91 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-linux-x64-musl'
+91 silly reify ]
+92 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-linux-x64-gnu
+93 silly reify mark deleted [
+93 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-linux-x64-gnu'
+93 silly reify ]
+94 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-linux-arm64-musl
+95 silly reify mark deleted [
+95 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-linux-arm64-musl'
+95 silly reify ]
+96 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-linux-arm64-gnu
+97 silly reify mark deleted [
+97 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-linux-arm64-gnu'
+97 silly reify ]
+98 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-darwin-x64
+99 silly reify mark deleted [
+99 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-darwin-x64'
+99 silly reify ]
+100 verbose reify failed optional dependency C:\Users\Administrator\Desktop\nextjsweb\movie-nextjs\node_modules\@next\swc-darwin-arm64
+101 silly reify mark deleted [
+101 silly reify   'C:\\Users\\Administrator\\Desktop\\nextjsweb\\movie-nextjs\\node_modules\\@next\\swc-darwin-arm64'
+101 silly reify ]
+102 timing reifyNode:node_modules/fsevents Completed in 6ms
+103 timing reifyNode:node_modules/@next/swc-win32-ia32-msvc Completed in 6ms
+104 timing reifyNode:node_modules/@next/swc-win32-arm64-msvc Completed in 6ms
+105 timing reifyNode:node_modules/@next/swc-linux-x64-musl Completed in 6ms
+106 timing reifyNode:node_modules/@next/swc-linux-x64-gnu Completed in 6ms
+107 timing reifyNode:node_modules/@next/swc-linux-arm64-musl Completed in 6ms
+108 timing reifyNode:node_modules/@next/swc-linux-arm64-gnu Completed in 6ms
+109 timing reifyNode:node_modules/@next/swc-darwin-x64 Completed in 6ms
+110 timing reifyNode:node_modules/@next/swc-darwin-arm64 Completed in 6ms
+111 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+112 silly tarball no local data for asynckit@https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz. Extracting by manifest.
+113 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+114 silly tarball no local data for combined-stream@https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz. Extracting by manifest.
+115 silly tarball no local data for proxy-from-env@https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz. Extracting by manifest.
+116 silly tarball no local data for form-data@https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz. Extracting by manifest.
+117 silly tarball no local data for follow-redirects@https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz. Extracting by manifest.
+118 silly tarball no local data for axios@https://registry.npmjs.org/axios/-/axios-1.5.1.tgz. Extracting by manifest.
+119 silly tarball no local data for delayed-stream@https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz. Extracting by manifest.
+120 http fetch GET 200 https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz 108ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 120ms (cache miss)
+122 timing reifyNode:node_modules/mime-db Completed in 131ms
+123 timing reifyNode:node_modules/asynckit Completed in 144ms
+124 http fetch GET 200 https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz 214ms (cache miss)
+125 timing reifyNode:node_modules/combined-stream Completed in 227ms
+126 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 218ms (cache miss)
+127 timing reifyNode:node_modules/mime-types Completed in 229ms
+128 http fetch GET 200 https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz 219ms (cache miss)
+129 timing reifyNode:node_modules/delayed-stream Completed in 234ms
+130 http fetch GET 200 https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz 224ms (cache miss)
+131 timing reifyNode:node_modules/proxy-from-env Completed in 236ms
+132 http fetch GET 200 https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz 226ms (cache miss)
+133 timing reifyNode:node_modules/form-data Completed in 239ms
+134 http fetch GET 200 https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz 230ms (cache miss)
+135 timing reifyNode:node_modules/follow-redirects Completed in 242ms
+136 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 310ms
+137 timing auditReport:getReport Completed in 314ms
+138 silly audit report {}
+139 timing auditReport:init Completed in 0ms
+140 timing reify:audit Completed in 315ms
+141 http fetch GET 200 https://registry.npmjs.org/axios/-/axios-1.5.1.tgz 322ms (cache miss)
+142 timing reifyNode:node_modules/axios Completed in 335ms
+143 timing reify:unpack Completed in 336ms
+144 timing reify:unretire Completed in 0ms
+145 timing build:queue Completed in 1ms
+146 timing build:deps Completed in 1ms
+147 timing build Completed in 1ms
+148 timing reify:build Completed in 1ms
+149 timing reify:trash Completed in 1ms
+150 timing reify:save Completed in 34ms
+151 timing reify Completed in 1133ms
+152 silly ADD node_modules/mime-db
+153 silly ADD node_modules/delayed-stream
+154 silly ADD node_modules/mime-types
+155 silly ADD node_modules/combined-stream
+156 silly ADD node_modules/asynckit
+157 silly ADD node_modules/proxy-from-env
+158 silly ADD node_modules/form-data
+159 silly ADD node_modules/follow-redirects
+160 silly ADD node_modules/axios
+161 silly ADD
+162 silly ADD
+163 silly ADD
+164 silly ADD
+165 silly ADD
+166 silly ADD
+167 silly ADD
+168 silly ADD
+169 silly ADD
+170 timing command:i Completed in 1141ms
+171 verbose exit 0
+172 timing npm Completed in 1383ms
+173 info ok
