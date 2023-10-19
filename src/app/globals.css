@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
