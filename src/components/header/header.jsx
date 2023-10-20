@@ -4,7 +4,6 @@ import customAxios from '../../utils/customAxios'
 import { useEffect, useState } from 'react'
 import NavigationMobile from "./NavigationMobile";
 import Navbar from "./Navbar";
-import SearchBar from "./SearchBar";
 
 export default function Header() {
 
