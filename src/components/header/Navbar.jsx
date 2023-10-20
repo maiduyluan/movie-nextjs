@@ -12,7 +12,7 @@ const Navbar = ({ data, className }) => {
         <div className={className}>
             <div className="text-sm lg:flex-grow">
                 <button
-                    id="category"
+                    value="category"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                     onClick={() => setShowCategory(!showcategory)}
                 >
@@ -27,24 +27,27 @@ const Navbar = ({ data, className }) => {
                 </div>
                 <Link
                     href="/"
+                    value="phimdangchieu"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                 >
                     Đang Chiếu
                 </Link>
                 <Link
                     href="/"
+                    value="phimsapchieu"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                 >
                     Sắp Chiếu
                 </Link>
                 <Link
                     href="/"
+                    value="phimphobien"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                 >
                     Phổ Biến
                 </Link>
                 <div
-                    id="year"
+                    value="year"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white mr-4 cursor-pointer"
                     onClick={() => setShowYears(!showyears)}
                 >
