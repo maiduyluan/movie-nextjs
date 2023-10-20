@@ -14,7 +14,7 @@ const NavigationMobile = ({ data }) => {
     return (
         <div className='lg:hidden'>
             <button
-                className="text-3xl lg:hidden"
+                className="text-3xl"
                 onClick={handleToggleMobile}
             >
                 <AiOutlineMenu />
