@@ -2,10 +2,23 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
-import Loading from '../../app/loading'
 
 const Carousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  const handlePrev = () => {
+    setCurrentIndex(curr => curr === 0 ? data?.length - 1 : curr - 1)
+  }
+
+  const handleNext = () => {
+    setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
+    }, 3000)
+  }, [currentIndex])
 
   return (
     <div
@@ -15,8 +28,8 @@ const Carousel = ({ data }) => {
       className='relative w-full h-[550px] bg-center bg-no-repeat bg-cover'
     >
       <div className='absolute top-[50%] w-full z-10 flex justify-between sm:px-0 px-5'>
-        <button className='p-3 text-center text-4xl'><GrFormPrevious /></button>
-        <button className='p-3 text-center text-4xl'><GrFormNext /></button>
+        <button onClick={handlePrev} className='p-3 text-center text-4xl'><GrFormPrevious /></button>
+        <button onClick={handleNext} className='p-3 text-center text-4xl'><GrFormNext /></button>
       </div>
       <div className='absolue w-full h-full bg-black opacity-60'></div>
       <div className=' md:flex-row flex-col  absolute md:items-end items-starts left-0 bottom-0 lg:px-[100px] md:px-[50px] px-5 py-10 lg:w-[auto] md:gap-5'>
