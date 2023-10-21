@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from '../components/header/Header'
-import Trending from '../components/trending/Trending'
+import Header from '@/components/header/Header'
+import Trending from '@/components/trending/Trending'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className='md:flex gap-5 px-5 xl:px-[200px] '>
+        <div className='md:flex gap-5'>
           {children}
           <Trending />
         </div>

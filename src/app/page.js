@@ -9,8 +9,6 @@ export default function Home() {
   useEffect(() => {
     customAxios('/3/movie/popular?language=en-US&page=1').then((data) => setData(data.results))
   }, [])
-
-  console.log('data: ', data)
   
   return (
     <main className='xl:w-10/12 md:w-8/12 w-full'>
