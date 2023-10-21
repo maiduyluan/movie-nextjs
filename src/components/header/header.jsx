@@ -1,9 +1,9 @@
 'use client'
 import Link from "next/link";
-import customAxios from '../../utils/customAxios'
+import customAxios from '@/utils/customAxios'
 import { useEffect, useState } from 'react'
-import NavigationMobile from "./NavigationMobile";
-import Navbar from "./Navbar";
+import NavigationMobile from "@/components/header/NavigationMobile";
+import Navbar from "@/components/header/Navbar";
 
 export default function Header() {
 
