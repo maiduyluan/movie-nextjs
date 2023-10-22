@@ -1,7 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Carousel from '@/modules/trangchu/Carousel'
+import Carousel from '@/components/trangchu/Carousel'
 import customAxios from '@/utils/customAxios'
+import CardFilmTrangChu from '@/components/trangchu/CardFilmTrangChu'
 
 export default function Home() {
   const [data, setData] = useState([])
@@ -11,8 +12,17 @@ export default function Home() {
   }, [])
   
   return (
-    <main className='xl:w-10/12 md:w-8/12 w-full'>
+    <div className='xl:w-10/12 md:w-8/12 w-full'>
       <Carousel data={data} />
-    </main>
+      <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-5 p-5'>
+        {data.map((item, index) => (
+          <CardFilmTrangChu
+            key={index}
+            imageURL={item?.poster_path}
+            title={item?.title}
+          />
+        ))}
+      </div>
+    </div>
   )
 }

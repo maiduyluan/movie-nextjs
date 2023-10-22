@@ -6,6 +6,8 @@ import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
 const Carousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
+
+
   const handlePrev = () => {
     setCurrentIndex(curr => curr === 0 ? data?.length - 1 : curr - 1)
   }
@@ -14,11 +16,11 @@ const Carousel = ({ data }) => {
     setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
   }
 
-  useEffect(() => {
-    setTimeout(() => {
-      setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
-    }, 3000)
-  }, [currentIndex])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
+  //   }, 3000)
+  // }, [currentIndex])
 
   return (
     <div
@@ -35,7 +37,7 @@ const Carousel = ({ data }) => {
       <div className=' md:flex-row flex-col  absolute md:items-end items-starts left-0 bottom-0 lg:px-[100px] md:px-[50px] px-5 py-10 lg:w-[auto] md:gap-5'>
         <Image
           src={`https://image.tmdb.org/t/p/w300/${data[currentIndex]?.poster_path}`}
-          alt="57 seconds"
+          alt={`${data[currentIndex]?.title}`}
           width={150}
           height={150}
           className=' md:w-[200px] w-300px h-full md:block hidden'

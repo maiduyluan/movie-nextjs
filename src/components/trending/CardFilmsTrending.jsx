@@ -2,13 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export const CardFilm = ({ postUrl, title, views, overview }) => {
+export const CardFilm = ({ imageUrl, title, views, overview }) => {
 
   return (
     <>
         <Link href='/' className='flex  w-auto h-auto rounded-xl mb-5 bg-orange-300'>
           <Image
-            src={`https://image.tmdb.org/t/p/w300${postUrl}`}
+            src={`https://image.tmdb.org/t/p/w300${imageUrl}`}
             alt='Killers of the Flower Moon'
             width={100}
             height={100}

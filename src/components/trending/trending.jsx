@@ -11,12 +11,12 @@ export default function Trending() {
     }, [])
 
     return (
-        <div className="flex flex-col item-center xl:w-2/12 md:w-4/12 w-full">
+        <div className="flex flex-col item-center xl:w-4/12 md:w-4/12 w-full">
             <h1 className="text-2xl mb-3 font-bold text-white italic">TOP TRENDING</h1>
             {data.slice(0,6).map((item, index) => (
                 <CardFilm 
                     key={index} 
-                    postUrl={item?.poster_path}
+                    imageUrl={item?.poster_path}
                     title={item?.original_title}
                     views={item?.popularity}
                     overview={item?.overview}
