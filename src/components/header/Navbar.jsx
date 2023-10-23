@@ -20,7 +20,7 @@ const Navbar = ({ data, className }) => {
                 </button>
                 <div className=" absolute flex-col bg-teal-300 z-10 ">
                     { showcategory && data?.map((item, index) => (
-                        <Link className=" hover:text-red-300 w-40 text-lg px-2.5" href='/' key={index}>
+                        <Link className= "hover:text-red-300 w-40 text-lg px-2.5" href = {`/category/${item.id}`} key={index}>
                             {item.name}
                         </Link>
                     ))}
