@@ -20,6 +20,7 @@ export default function Home() {
             key={index}
             imageURL={item?.poster_path}
             title={item?.title}
+            id={item?.id}
           />
         ))}
       </div>

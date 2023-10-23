@@ -20,6 +20,7 @@ export default function Trending() {
                     title={item?.original_title}
                     views={item?.popularity}
                     overview={item?.overview}
+                    id={item?.id}
                 />
             ))}
         </div>

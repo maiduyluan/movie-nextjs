@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
 
@@ -16,18 +16,12 @@ const Carousel = ({ data }) => {
     setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
   }
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setCurrentIndex(curr => curr === data?.length - 1 ? 0 : curr + 1)
-  //   }, 3000)
-  // }, [currentIndex])
-
   return (
     <div
       style={{
         backgroundImage: `url('https://image.tmdb.org/t/p/original/${data[currentIndex]?.backdrop_path}')`
       }}
-      className='relative w-full h-[550px] bg-center bg-no-repeat bg-cover'
+      className='relative w-full h-[500px] bg-center bg-no-repeat bg-cover'
     >
       <div className='absolute top-[50%] w-full z-10 flex justify-between sm:px-0 px-5'>
         <button onClick={handlePrev} className='p-3 text-center text-4xl'><GrFormPrevious /></button>
