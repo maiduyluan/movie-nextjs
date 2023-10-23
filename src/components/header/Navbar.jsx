@@ -26,22 +26,19 @@ const Navbar = ({ data, className }) => {
                     ))}
                 </div>
                 <Link
-                    href="/"
-                    value="phimdangchieu"
+                    href="/phimdangchieu"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                 >
                     Đang Chiếu
                 </Link>
                 <Link
-                    href="/"
-                    value="phimsapchieu"
+                    href="/phimsapchieu"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                 >
                     Sắp Chiếu
                 </Link>
                 <Link
-                    href="/"
-                    value="phimphobien"
+                    href="/phimphobien"
                     className="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-red-300 mr-4"
                 >
                     Phổ Biến
