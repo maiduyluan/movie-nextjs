@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export const CardFilm = ({ imageUrl, title, views, overview }) => {
+export const CardFilm = ({ id,imageUrl, title, views, overview }) => {
 
   return (
     <>
-        <Link href='/' className='flex  w-auto h-auto rounded-xl mb-5 bg-orange-300'>
+        <Link href={`/noidungphim/${id}`} className='flex  w-auto h-auto rounded-xl mb-5 bg-orange-300'>
           <Image
             src={`https://image.tmdb.org/t/p/w300${imageUrl}`}
             alt='Killers of the Flower Moon'

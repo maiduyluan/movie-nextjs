@@ -1,10 +1,10 @@
 'use client'
 import Link from 'next/link'
 
-const CardFilmTrangChu = ({ imageURL, title }) => {
+const CardFilmTrangChu = ({ id, imageURL, title }) => {
 
   return (
-    <Link href='/'>
+    <Link href={`/noidungphim/${id}`}>
       <div className='relative '>
         <img src={`https://image.tmdb.org/t/p/w300${imageURL}`} alt=""></img>
         <p className='absolute flex items-center justify-center bottom-0 text-sm bg-black 
