@@ -10,6 +10,8 @@ const CategoryParamsPage = ({ params }) => {
     const [data, setData] = useState([])
     const [numberPage, setNumberPage] = useState(1)
 
+    console.log(params)
+
     useEffect(() => {
         customAxios(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${numberPage}&sort_by=popularity.desc&with_genres=${params.slug}`).then((data) => setData(data.results))
     }, [numberPage])

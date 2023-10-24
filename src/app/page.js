@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Carousel from '@/components/trangchu/Carousel'
 import customAxios from '@/utils/customAxios'
+import Carousel from '@/components/trangchu/Carousel'
 import CardFilm from '@/components/trangchu/CardFilm'
 
 export default function Home() {

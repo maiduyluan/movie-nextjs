@@ -1,7 +1,7 @@
 'use client'
-import { useState } from 'react'
 import Image from 'next/image'
-import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
+import Link from 'next/link'
+import { useState } from 'react'
 
 const Carousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -49,10 +49,10 @@ const Carousel = ({ data }) => {
         />
         <div>
           <div className='font-bold mb-2'>{data[currentIndex]?.title}</div>
-          <div className='line-clamp-3 mb-2'>{data[currentIndex]?.overview}</div>
+          <div className='line-clamp-3 mb-5'>{data[currentIndex]?.overview}</div>
           <div>
-            <button className='w-[90px] h-10 bg-[red] transition-[0.5s] duration-[ease] hover:bg-[orange] mb-2 mr-5 rounded-md'>Trailer</button>
-            <button className='w-[100px] h-10 bg-[red] transition-[0.5s] duration-[ease] hover:bg-[orange] mb-2 rounded-md'>Xem phim</button>
+            <Link href={`/watch-movie/${data[currentIndex]?.id}`} className=' bg-[red] transition-[0.5s] duration-[ease] hover:bg-[orange] mb-2 mr-5 rounded-md p-2'>Trailer</Link>
+            <Link href={`/watch-movie/${data[currentIndex]?.id}`} className=' bg-[red] transition-[0.5s] duration-[ease] hover:bg-[orange] mb-2 rounded-md p-2'>Xem phim</Link>
           </div>
         </div>
       </div>
