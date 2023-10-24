@@ -8,6 +8,7 @@ import NumberPage from '@/components/numberpage/NumberPage'
 const Page = () => {
     const [data, setData] = useState([])
     const [numberPage, setNumberPage] = useState(1)
+    
     useEffect(() => {
         customAxios(`/3/movie/now_playing?language=en-US&page=${numberPage}`).then((data) => setData(data.results))
     }, [numberPage])
