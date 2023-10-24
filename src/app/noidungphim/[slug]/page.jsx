@@ -31,7 +31,7 @@ const ContentParams = ({ params }) => {
         <div className=' md:flex-row flex-col  absolute md:items-end items-starts left-0 bottom-0 lg:px-[100px] md:px-[50px] px-5 py-10 lg:w-[auto] md:gap-5'>
           <Image
             src={`https://image.tmdb.org/t/p/w300/${data?.poster_path}`}
-            alt={`${data?.title}`}
+            alt={`Loading...`}
             width={150}
             height={150}
             className=' md:w-[200px] w-300px h-full md:block hidden'

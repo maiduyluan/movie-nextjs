@@ -1,18 +1,22 @@
 'use client'
-import CardFilmTrangChu from '@/components/trangchu/CardFilmTrangChu'
+import CardFilmTrangChu from '@/components/trangchu/CardFilm'
 import React from 'react'
 import { useEffect, useState } from 'react'
 import customAxios from '@/utils/customAxios'
+import NumberPage from '@/components/numberpage/NumberPage'
 
 const CategoryParamsPage = ({ params }) => {
     
     const [data, setData] = useState([])
+    const [numberPage, setNumberPage] = useState(1)
 
     useEffect(() => {
-        customAxios(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=undefined&sort_by=popularity.desc&with_genres=${params.slug}`).then((data) => setData(data.results))
-    }, [])
+        customAxios(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${numberPage}&sort_by=popularity.desc&with_genres=${params.slug}`).then((data) => setData(data.results))
+    }, [numberPage])
 
-    console.log(data)
+    const handlePaganation = (id) => {
+        setNumberPage(id)
+    }
 
     return (
         <div className='xl:w-10/12 md:w-8/12 w-full'>
@@ -26,6 +30,8 @@ const CategoryParamsPage = ({ params }) => {
                     />
                 ))}
             </div>
+
+            <NumberPage onHandlePagination={handlePaganation} />
         </div>
     )
 }

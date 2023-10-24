@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Carousel from '@/components/trangchu/Carousel'
 import customAxios from '@/utils/customAxios'
-import CardFilmTrangChu from '@/components/trangchu/CardFilmTrangChu'
+import CardFilm from '@/components/trangchu/CardFilm'
 
 export default function Home() {
   const [data, setData] = useState([])
@@ -16,7 +16,7 @@ export default function Home() {
       <Carousel data={data} />
       <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-5 p-5'>
         {data.map((item, index) => (
-          <CardFilmTrangChu
+          <CardFilm
             key={index}
             imageURL={item?.poster_path}
             title={item?.title}

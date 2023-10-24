@@ -1,4 +1,5 @@
+import {ImSpinner8} from 'react-icons/im'
+
 export default function Loading() {
-  // You can add any UI inside Loading, including a Skeleton.
-  return <h1>Loading...</h1>
+  return <ImSpinner8 classname='animate-spin w-full items-center' size={50}/>
 }

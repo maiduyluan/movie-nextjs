@@ -23,11 +23,22 @@ const Carousel = ({ data }) => {
       }}
       className='relative w-full h-[500px] bg-center bg-no-repeat bg-cover'
     >
-      <div className='absolute top-[50%] w-full z-10 flex justify-between sm:px-0 px-5'>
-        <button onClick={handlePrev} className='p-3 text-center text-4xl'><GrFormPrevious /></button>
-        <button onClick={handleNext} className='p-3 text-center text-4xl'><GrFormNext /></button>
+      <div className='absolute top-[50%] left-0 w-full z-10 flex justify-between sm:px-0 px-5'>
+        <button
+          onClick={handlePrev}
+          className='p-3 text-center text-4xl text-white text-xl'
+        >
+          &lt; 
+        </button>
+
+        <button 
+          onClick={handleNext} 
+          className='p-3 text-center text-4xl text-xl'
+        >
+          &gt;
+        </button>
       </div>
-      <div className='absolue w-full h-full bg-black opacity-60'></div>
+      <div className='absolute w-full h-full bg-black opacity-60 Z-1'></div>
       <div className=' md:flex-row flex-col  absolute md:items-end items-starts left-0 bottom-0 lg:px-[100px] md:px-[50px] px-5 py-10 lg:w-[auto] md:gap-5'>
         <Image
           src={`https://image.tmdb.org/t/p/w300/${data[currentIndex]?.poster_path}`}
