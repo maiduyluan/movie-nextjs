@@ -10,13 +10,13 @@ import { useEffect, useMemo, useState } from 'react'
 const ContentParams = ({ params }) => {
     const [data, setData] = useState({})
     const [episode, setEpisode] = useState(0)
-  
+
     useEffect(() => {
         customAxios(`/3/movie/${params.slug}?language=en-US&append_to_response=videos,credits,similar`).then((data) => setData(data))
     }, [])
-    
+
     const cardCelebs = data?.credits?.cast?.slice(0, 20)
-    const arrEp = data?.videos?.results   
+    const arrEp = data?.videos?.results
 
     return (
         <div className='xl:w-10/12 md:w-8/12 w-full mb-5'>
@@ -59,8 +59,12 @@ const ContentParams = ({ params }) => {
             </div>
 
             <hr className='mb-5' />
-            <InfoFilm data={data} />
-            <OverviewFilm data={data} />
+            <InfoFilm
+                data={data}
+            />
+            <OverviewFilm
+                data={data}
+            />
         </div>
     )
 }
