@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className='block md:flex gap-5 px-[20px] sm:px-[20px] xl:px-[200px]'>
+        <div className='block md:flex gap-5 pt-[100px] lg:pt-[120px] px-[20px] sm:px-[20px] xl:px-[200px]'>
           {children}
           <Trending />
         </div>

@@ -19,7 +19,7 @@ const NavigationMobile = ({ data }) => {
             >
                 <AiOutlineMenu />
             </button>
-            <Navbar data={data} className={`absolute left-0 right-0 ${toggleNavbar ? 'translate-y-0' : '-translate-y-96'} transition-all duration-300 w-full bg-teal-500 px-10`} />
+            <Navbar data={data} className={`absolute left-0 right-0 ${toggleNavbar ? 'translate-x-0' : '-translate-x-[1000px]'} transition-all duration-300 w-full bg-teal-500 px-10 pb-5`} />
         </div>
     )
 }

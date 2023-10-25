@@ -5,7 +5,7 @@ import CardCeleb from '@/components/noidungphim/CardCeleb'
 import InfoFilm from '@/components/noidungphim/InfoFilm'
 import OverviewFilm from '@/components/noidungphim/OverviewFilm'
 import { CgMenuLeft } from 'react-icons/cg'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const ContentParams = ({ params }) => {
     const [data, setData] = useState({})

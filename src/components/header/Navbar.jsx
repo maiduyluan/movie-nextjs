@@ -3,6 +3,7 @@ import React from 'react'
 import Link from "next/link";
 import SearchBar from './SearchBar';
 import { useState } from 'react'
+import years from '@/utils/yearsArr'
 
 const Navbar = ({ data, className }) => {
     const [showcategory, setShowCategory] = useState(false)
@@ -18,9 +19,9 @@ const Navbar = ({ data, className }) => {
                 >
                     Thể Loại
                 </button>
-                <div className=" absolute flex-col bg-teal-300 z-10 ">
-                    { showcategory && data?.map((item, index) => (
-                        <Link className= "hover:text-red-300 w-40 text-lg px-2.5" href = {`/category/${item.id}`} key={index}>
+                <div className=" absolute flex-col bg-teal-600 z-10 rounded-lg">
+                    {showcategory && data?.map((item, index) => (
+                        <Link className="hover:text-red-300 w-40 text-lg px-2.5" href={`/category/${item.id}`} key={index}>
                             {item.name}
                         </Link>
                     ))}
@@ -49,18 +50,13 @@ const Navbar = ({ data, className }) => {
                     onClick={() => setShowYears(!showyears)}
                 >
                     Năm
-                        { showyears &&
-                        <div className="absolute flex-col bg-teal-300 z-10">
-                            <button className="hover:text-red-300 w-20 text-lg ">2016</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2017</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2018</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2019</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2020</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2021</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2022</button>
-                            <button className="hover:text-red-300 w-20 text-lg ">2023</button>
+                    {showyears &&
+                        <div className="absolute flex-col bg-teal-600 z-10 rounded-lg">
+                            {years.map((item, index) => (
+                                <Link href={`/years/${item.name}`} key={index} className="hover:text-red-300 w-20 text-lg text-center">{item.name}</Link>
+                            ))}
                         </div>
-                        }
+                    }
                 </div>
             </div>
             <SearchBar />
