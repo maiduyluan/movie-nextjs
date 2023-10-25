@@ -14,7 +14,7 @@ export default function Header() {
   }, [])
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6 mb-4 relative z-20">
+    <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6 mb-4 z-20 fixed w-full">
       <div id="title" className="flex items-center flex-shrink-0 text-white mr-6">
         <Link href='/' className="font-semibold text-3xl tracking-tight">Phimmoichill</Link>
       </div>
